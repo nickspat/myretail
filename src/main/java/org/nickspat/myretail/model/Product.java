@@ -1,12 +1,12 @@
-package org.nickspat.model;
+package org.nickspat.myretail.model;
 
 public class Product {
 
     String id;
     String name;
-    Price current_price;
+    ProductPrice current_price;
     
-    public class Price{
+    public class ProductPrice{
         public float getValue() {
             return value;
         }
@@ -14,7 +14,15 @@ public class Product {
             this.value = value;
         }
         float value;
-        enum currency_code{USD};
+        String currencyCode;
+        public String getCurrencyCode() {
+            return currencyCode;
+        }
+        public void setCurrencyCode(String currencyCode) {
+            this.currencyCode = currencyCode;
+        }
+    
+        
     }
 
     public String getId() {
@@ -33,11 +41,11 @@ public class Product {
         this.name = name;
     }
 
-    public Price getCurrent_price() {
+    public ProductPrice getCurrent_price() {
         return current_price;
     }
 
-    public void setCurrent_price(Price current_price) {
+    public void setCurrent_price(ProductPrice current_price) {
         this.current_price = current_price;
     }
 
