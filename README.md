@@ -36,3 +36,10 @@ Gradle tool/plugin
 * Run gradle: ./gradlew run
 
 ## Tips for future enhancements ##
+* Implement post, delete methods
+* Make asynchronous call to Target API and MongoDB
+* Write Unit test
+* Create database connection pooling
+* Implement caching on Product object
+* Implement circuitbreaker/set timeouts while calling Target's API
+* Implement metrics collection, log response times from Target API
